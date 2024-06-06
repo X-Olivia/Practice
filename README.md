@@ -6,6 +6,6 @@ Hello stranger, nice to meet you here. I'm a Y2 student of CSAI, this is a repos
 
 #### Repository details
 
-1.  LeeCode_Python -This is a collection of LeeCode Algorithms questions, using the Python.
+1.  LeetCode_Python -This is a collection of LeeCode Algorithms questions, using the Python.
 
 
