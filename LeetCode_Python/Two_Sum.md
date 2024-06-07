@@ -30,7 +30,7 @@ Only one valid answer exists.<br />
 Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?<br />
 
 
-## Solution1
+## Method 1: Both Brute force
 
 ### Analysis：
 
@@ -47,21 +47,39 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        for i in nums:
-            first_index = nums.index(i)
-            second = target - i
+        for num in nums:
+            first_index = nums.index(num)
+            complement = target - num
             next_index = first_index + 1
             temp_nums = nums[next_index: ]
-            if second in temp_nums:
-                return (first_index, temp_nums.index(second) + next_index)
-        return "no solution."
+            if complement in temp_nums:
+                return (first_index, temp_nums.index(complement) + next_index)
+        return []
 ```
 
-## Solution2
+## Method 1.2: Two loops
 
 ### Analysis
 
-However, this method consume too much time, so we can try to solve it by Hash map.
+Also, we can run two nested loops to check every possible pair of numbers
+
+### Code
+
+```shell
+class Solution:
+    def twoSum(self, nums, target)
+        for i in range(len(nums)):
+            for j in range(i + 1, len(nums)):
+                if (i != j and nums[i] + nums[j] == target):
+                    return [i, j]
+        return []
+```
+
+## Method 2: Hash Map
+
+### Analysis
+
+However, above methods's time/space complexity are not good enough, so we can try to solve this problem by Hash Map.
 
 The first time I write in Hash map is:
 
@@ -69,12 +87,12 @@ The first time I write in Hash map is:
 class Solution(object):
     def twoSum(self, nums, target):
         dict = {}
-        for i in nums:
-            if target - i not in dict:
-                dict[i] = nums.index(i)
+        for num in nums:
+            if target - num not in dict:
+                dict[num] = nums.index(num)
             else:
-                return(nums.index(target - i),nums.index(i))
-        return "no solution"
+                return(nums.index(target - num),nums.index(num))
+        return []
 ```
 
 There's a problem that if the nums in array are same, the index returned would be same, hence we need to change the way of for loop
@@ -90,7 +108,7 @@ class Solution(object):
                 dict[nums[i]] = i
             else:
                 return(dict[target - nums[i]], i)
-        return "no solution"
+        return []
 ```
 
 
