@@ -34,8 +34,9 @@ Follow-up: Can you come up with an algorithm that is less than O(n2) time comple
 
 ### Analysis：
 
-Find two numbers which sum is the target, given an array and target number. And the same element can't be used twice.
-Hence the simple solution (thinking easily) is iterating the array and create a temp array which start from i+1 to avoid useing same element. 
+To find two numbers that sum up to the target, a simple approach is to iterate through the array. 
+Hence the simple solution (thinking easily) is creating a temporary subarray starting from the next element to avoid using the same element twice for each element.
+
 
 ### Code
 
@@ -61,7 +62,7 @@ class Solution(object):
 
 ### Analysis
 
-Also, we can run two nested loops to check every possible pair of numbers
+Also, we can use two nested loops to check every possible pair of numbers in the array. This method ensures that all combinations are checked to find the pair that sums to the target
 
 ### Code
 
@@ -79,7 +80,7 @@ class Solution:
 
 ### Analysis
 
-However, above methods's time/space complexity are not good enough, so we can try to solve this problem by Hash Map.
+The above methods have higher time complexity. To improve efficiency, we can use a hash map. The idea is to iterate through the array and for each element, check if the complement (target - current element) exists in the hash map. If it does, we have found our pair. Otherwise, we add the current element to the hash map. This approach ensures that each element is processed in constant time, resulting in an overall time complexity of O(n).
 
 The first time I write in Hash map is:
 
