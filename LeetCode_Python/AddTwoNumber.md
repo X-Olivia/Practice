@@ -108,6 +108,8 @@ Next, let's optimize this code:
 1.The redundant while loops for processing l1 and l2 can be merged into one main while loop.
 2.The variable naming needs improvement for better clarity.
 
+The optimization idea is that if one of the lists has ended while the other still has a next node, we can extend the finished list by treating its value as 0. This way, we can continue adding the nodes together.
+
 ## Optiimized Code
 ```shell
 
