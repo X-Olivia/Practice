@@ -125,4 +125,7 @@ class Solution(object):
      - Update `dic[s[i]]` to the current index `i`.
      - Update `length` to be the maximum of the current `length` and the length of the current substring (`i - start + 1`).
 
+3. **Tip**:
+    - take care of this `if s[i] in dic and dic[s[i]] >= start:`condition
+    
 This approach ensures an O(n) time complexity, where n is the length of the string, making it efficient and suitable for large input sizes.
