@@ -6,6 +6,6 @@ This is a repository to record what I have learned in school and also some my ow
 
 #### Repository details
 
-1.  LeetCode_Python -This is a collection of LeeCode Algorithms questions, using the Python.
+1.  LeetCode_Python -This is a collection of LeeCode Algorithms questions, using Python.
 
 
