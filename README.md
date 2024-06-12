@@ -1,7 +1,7 @@
 # Practice
 
 #### Introduction
-This is a repository to record what I have learned in school and also some my own practice. During the first year in college, I found that my fundamental skills are not good enough and the knowledge always would be forgot after exam. So I want to improve my basic ability of CS through writing blogs. Hope I can be better in the future, and the note can help someone like me.
+This repository serves as a record of what I've learned in school, along with some personal practice. During my first year of college, I realized that my fundamental skills were lacking and that I tended to forget knowledge soon after exams. To enhance my basic computer science abilities, I've decided to write blogs. I hope not only to improve myself through this process but also to help others who might be facing similar challenges.
 
 
 #### Repository details
