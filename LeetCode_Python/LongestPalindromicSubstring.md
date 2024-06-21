@@ -126,3 +126,4 @@ class Solution:
             r += 1
         return s[l + 1 : r]
 ```
+I think the core of this method is: Seek rather than check.
