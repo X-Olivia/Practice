@@ -1,5 +1,3 @@
-Sure, here's the translation to English:
-
 ## Question
 Given a string `s`, return the longest palindromic substring in `s`.
 
