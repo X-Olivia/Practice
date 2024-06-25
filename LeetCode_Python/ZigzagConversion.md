@@ -2,10 +2,11 @@
 
 
 The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)
-
+```
 P   A   H   N
 A P L S I I G
 Y   I   R
+```
 And then read line by line: "PAHNAPLSIIGYIR"
 
 Write the code that will take a string and make this conversion given a number of rows:
@@ -22,10 +23,12 @@ Example 2:
 Input: s = "PAYPALISHIRING", numRows = 4
 Output: "PINALSIGYAHRPI"
 Explanation:
+```
 P     I    N
 A   L S  I G
 Y A   H R
 P     I
+```
 Example 3:
 
 Input: s = "A", numRows = 1
@@ -44,16 +47,18 @@ s consists of English letters (lower-case and upper-case), ',' and '.'.
 
 The formats should be like: 
 ### 4 rows
+```
 0     6       12
 1   5 7    11 13
 2 4   8 10
 3     9 
-
+```
 ### 3 rows
+```
 0   4   8     12
 1 3 5 7 9  11 13
 2   6   10
-
+```
 
 When I saw this problem, I thought we could use a 2D array. First, initialize a 2D array, and then perform some mathematical operations on the index of each character to get its position in the 2D array and store it there. After that, traverse the 2D array to get the new string. The difficulty lies in finding the index transformation rule. However, it seems somewhat complicated, and I don't think it is the best solution. To save time, I gave up on this approach and considered other solutions.
 
